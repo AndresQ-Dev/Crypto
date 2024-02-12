@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoOne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+    </header>
+
+    <main>
+        <section class="bloque1">
+            <textarea name="textarea" id="texarea" cols="30" rows="13" class="textArea"
+                placeholder="Ingrese el texto a encriptar"></textarea>
+
+                <p class="restricciones">&#187; Sólo letras minúsculas y sin acentos</p>
+
+            <div class="contendedorBotones">
+                <input type="button" class="btnEncriptar" value="Encriptar">
+                <input type="button" class="btnDesencriptar" value="Desencriptar">
+            </div>
+        </section>
+
+        <section class="bloque2">
+            <div class="contenedorImagenPanel">
+                <img src="images/panel.png" alt="imagen de panel">
+            </div>
+            <div class="contenedorH3">
+                <h3>Ninguna mensaje encontrado</h3>
+            </div>
+            <div class="contenedorParrafo">
+                <p>Ingresa el texto a encriptar o desencriptar.</p>
+            </div>
+
+            <div class="contenedorResultado">
+                <h3>Mensaje encriptado:</h3>
+                <p class="textoResultado"></p>
+            </div>
+
+            <div class="contenedorCopiar">
+                <input type="button" value="Copiar" class="btnCopiar">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>Copyright @AndresQ-Dev 2024</footer>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    width: 40%;
+    height: 100%;
+}
+
+.bloque1 {
+    width: 70%;
+}
+
+.textArea {
+    width: 80%;
+    height: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    resize: none;
+    font-size: 32px;
+}
+
+.restricciones {
+    width: 70%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.btnEncriptar {
+    width: 30%;
+    height: 55px;
+    margin-top: 30px;
+    background-color: #0A3871;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btnDesencriptar {
+    width: 30%;
+    height: 55px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid #0A3871;
+}
+
+.contendedorBotones {
+    text-align: center;
+    height: 30%;
+}
+
+.btnEncriptar,
+.btnDesencriptar {
+    border-radius: 24px;
+}
+
+.btnEncriptar:hover,
+.btnDesencriptar:hover,
+.btnCopiar:hover {
+    border: 3px solid #0A3871;
+}
+
+.bloque2 {
+    width: 30%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 24px;
+    margin-right: 20px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.contenedorImagenPanel {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /* height: 60%; */
+    padding-top: 120px;
+    box-sizing: border-box;
+    /* overflow: auto; */
+    display: flex;
+    /*Añadimos flexbox */
+    align-items: center;
+    /*Centramos verticalmente */
+    justify-content: center;
+    /*Centramos horizontalmente */
+}
+
+.contenedorH3 {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.contenedorParrafo {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.contenedorResultado {
+    width: 100%;
+    height: 70%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.contenedorCopiar {
+    width: 100%;
+    height: 20%;
+}
+
+.btnCopiar {
+    width: 65%;
+    height: 55px;
+    display: block;
+    margin: auto;
+    border-radius: 24px;
+    margin-top: 10%;
+    border: 2px solid #0A3871;
+
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
