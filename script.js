@@ -14,7 +14,12 @@ btnCopiar.onclick = copiar;
 
 function encriptar() {
     ocultarPanel();
-    resultado.textContent = encrypter(recuperarTexto());
+    var text=recuperarTexto();
+    if (text === "") {
+        alert("Debe escribir algo en el campo de texto");
+    } else {
+        resultado.textContent = encrypter(text);
+    }
 }
 
 function decrypter() {
@@ -101,3 +106,6 @@ function recuperarTextoBloque2() {
     return text.textContent;
 }
 
+textArea.addEventListener("click", function () {
+    textArea.focus();
+});
