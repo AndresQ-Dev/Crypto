@@ -205,6 +205,11 @@ footer {
         display: none;
         /* Oculta el contenedor de la imagen en smartphones */
     }
+
+    .restricciones {
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 /* Estilos para tablets */
@@ -216,11 +221,15 @@ footer {
     .bloque2 {
         width: 40%;
     }
-}
+
     /* Ocultar en tablets */
-    @media only screen and (max-width: 1024px) {
-        .contenedorImagenPanel {
-            display: none;
-            /* Oculta el contenedor de la imagen en tablets */
-        }
+    .contenedorImagenPanel {
+        display: none;
+        /* Oculta el contenedor de la imagen en tablets */
     }
+
+    .restricciones {
+        margin-left: 0;
+        text-align: center;
+    }
+}
