@@ -161,3 +161,41 @@ footer {
 .hide {
     display: none;
 }
+
+/* Estilos para smartphones */
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .textArea {
+        width: 100%;
+        height: 200px; /* ajusta según lo necesites */
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .bloque1, .bloque2 {
+        width: 100%;
+    }
+
+    .contenedorImagenPanel {
+        padding-top: 50px; /* ajusta según lo necesites */
+    }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .bloque1 {
+        width: 60%;
+    }
+
+    .bloque2 {
+        width: 40%;
+    }
+}
