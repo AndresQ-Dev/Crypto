@@ -18,7 +18,7 @@
 
     <main>
         <section class="bloque1">
-            <textarea name="textarea" id="texarea" cols="30" rows="13" class="textArea"
+            <textarea name="textarea" id="textarea" cols="30" rows="13" class="textArea"
                 placeholder="Ingrese el texto a encriptar"></textarea>
 
             <p class="restricciones"><span class="exclamation">&#33;</span> Sólo letras minúsculas y sin acentos</p>
@@ -33,19 +33,21 @@
             <div class="contenedorImagenPanel">
                 <img src="images/panel.png" alt="imagen de panel">
             </div>
+
             <div class="contenedorH3">
                 <h3>Ninguna mensaje encontrado</h3>
             </div>
+
             <div class="contenedorParrafo">
                 <p>Ingresa el texto a encriptar o desencriptar.</p>
             </div>
 
-            <div class="contenedorResultado">
+            <div class="contenedorResultado hide">
                 <h2>Mensaje encriptado:</h2>
                 <p class="textoResultado"></p>
             </div>
 
-            <div class="contenedorCopiar">
+            <div class="contenedorCopiar hide">
                 <input type="button" value="Copiar" class="btnCopiar">
             </div>
 
@@ -53,8 +55,7 @@
 
     </main>
 
-    <footer>Copyright @AndresQ-Dev 2024</footer>
-
+    <footer class="footer">Copyright @AndresQ-Dev 2024</footer>
 
 </body>
 <script src="script.js"></script>
