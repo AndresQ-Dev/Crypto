@@ -227,6 +227,11 @@ footer {
 /* Estilos para smartphones */
 @media only screen and (max-width: 600px) {
 
+.logo{
+    width: 75px;
+    height: auto;
+}
+
     main {
         flex-direction: column;
     }
@@ -275,7 +280,10 @@ footer {
 
     .contenedorH3 {
         margin-top: 15px;
-        margin-bottom: 10px;
+    }
+
+    .contenedorParrafo{
+        margin-top: 15px;
     }
 
     footer{
