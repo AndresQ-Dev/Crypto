@@ -23,6 +23,7 @@ function encriptar() {
         ocultarPanel();
         // Esta función muestra el contenedorResulta y Boton oculto
         mostrarResultado();
+        resaltarBloque();
         mostrarTextoDeFormaGradual(encrypter(text));
         // resultado.textContent = encrypter(text);
     }
@@ -126,4 +127,14 @@ function mostrarTextoDeFormaGradual(texto) {
         }
     }
     mostrarSiguienteCaracter();
+}
+
+function resaltarBloque() {
+    var bloque2 = document.querySelector(".bloque2");
+    bloque2.classList.add("resaltado"); // Agrega la clase resaltado al bloque2
+
+    // Después de X segundos, quita la clase resaltado para volver al estado original
+    setTimeout(function () {
+        bloque2.classList.remove("resaltado");
+    }, 700); // Duración en milisegundo
 }

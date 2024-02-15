@@ -204,20 +204,24 @@ section {
 
 footer {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    justify-content: center;
+    /* Centra horizontalmente los elementos */
     width: 100%;
     height: 30px;
     line-height: 32px;
     text-align: center;
-    margin:auto;
-    margin-top: 15px; 
+    margin: auto;
+    margin-top: 15px;
 }
 
-.LogoGitHub{
-    width: 20px; /* Tamaño deseado para el icono */
-    margin-left: 10px; /* Espacio entre el texto y el icono */
-    vertical-align: middle; 
+.LogoGitHub {
+    width: 20px;
+    /* Tamaño deseado para el icono */
+    margin-left: 10px;
+    /* Espacio entre el texto y el icono */
+    vertical-align: middle;
 }
 
 .hide {
@@ -227,10 +231,10 @@ footer {
 /* Estilos para smartphones */
 @media only screen and (max-width: 600px) {
 
-.logo{
-    width: 75px;
-    height: auto;
-}
+    .logo {
+        width: 75px;
+        height: auto;
+    }
 
     main {
         flex-direction: column;
@@ -282,11 +286,11 @@ footer {
         margin-top: 15px;
     }
 
-    .contenedorParrafo{
+    .contenedorParrafo {
         margin-top: 15px;
     }
 
-    footer{
+    footer {
         margin-top: 15px;
     }
 
@@ -310,4 +314,9 @@ footer {
         margin-left: 0;
         text-align: center;
     }
+}
+
+.resaltado {
+    border: 3px solid rgb(197, 45, 45);
+    /* Establece el borde rojo */
 }
