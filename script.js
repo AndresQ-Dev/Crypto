@@ -18,10 +18,13 @@ function encriptar() {
     if (text === "") {
         alert("Debe escribir algo en el campo de texto");
     } else {
+        //vaciar el textoResultado para que no se repita cada vez que se presione el botón "Encriptar"...
+        document.querySelector(".textoResultado").textContent = "";
         ocultarPanel();
         // Esta función muestra el contenedorResulta y Boton oculto
         mostrarResultado();
-        resultado.textContent = encrypter(text);
+        mostrarTextoDeFormaGradual(encrypter(text));
+        // resultado.textContent = encrypter(text);
     }
 }
 
@@ -109,3 +112,18 @@ function recuperarTextoBloque2() {
 textArea.addEventListener("click", function () {
     textArea.focus();
 });
+
+function mostrarTextoDeFormaGradual(texto) {
+    var i = 0;
+    var intervalo = 100; // Ajusta el intervalo de tiempo entre cada letra (en milisegundos)
+    var resultado = document.querySelector(".textoResultado");
+
+    function mostrarSiguienteCaracter() {
+        if (i < texto.length) {
+            resultado.textContent += texto.charAt(i);
+            i++;
+            setTimeout(mostrarSiguienteCaracter, intervalo);
+        }
+    }
+    mostrarSiguienteCaracter();
+}
