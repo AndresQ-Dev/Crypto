@@ -25,7 +25,6 @@ function encriptar() {
         mostrarResultado();
         resaltarBloque();
         mostrarTextoDeFormaGradual(encrypter(text));
-        // resultado.textContent = encrypter(text);
     }
 }
 
@@ -35,10 +34,12 @@ function decrypter() {
     mostrarResultado();
 }
 
+// este método copia el texto del resultado del encriptado directamente al "textArea" para desencriptar directamente y no al portapapeles...
 function copiar() {
     textArea.value = recuperarTextoBloque2();
 }
 
+//recupera el texto que hay en el TextArea
 function recuperarTexto() {
     var text = document.querySelector(".textArea");
     return text.value;
@@ -114,9 +115,10 @@ textArea.addEventListener("click", function () {
     textArea.focus();
 });
 
+//función para efecto Type (máquina de escribir)
 function mostrarTextoDeFormaGradual(texto) {
     var i = 0;
-    var intervalo = 100; // Ajusta el intervalo de tiempo entre cada letra (en milisegundos)
+    var intervalo = 100; // intervalo entre cada letra (en milisegundos)
     var resultado = document.querySelector(".textoResultado");
 
     function mostrarSiguienteCaracter() {
@@ -129,6 +131,7 @@ function mostrarTextoDeFormaGradual(texto) {
     mostrarSiguienteCaracter();
 }
 
+//resaltar borde de bloque2 al encriptar 
 function resaltarBloque() {
     var bloque2 = document.querySelector(".bloque2");
     bloque2.classList.add("resaltado"); // Agrega la clase resaltado al bloque2
