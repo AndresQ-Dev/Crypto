@@ -17,6 +17,8 @@ function encriptar() {
     var text = recuperarTexto();
     if (text === "") {
         alert("Debe escribir algo en el campo de texto");
+    } else if (!/^[a-z\s.,;¡!¿?]+$/.test(text)) {
+        alert("Por favor, ingrese solo letras minúsculas sin acentos.");
     } else {
         //vaciar el textoResultado para que no se repita cada vez que se presione el botón "Encriptar"...
         document.querySelector(".textoResultado").textContent = "";
@@ -30,13 +32,23 @@ function encriptar() {
 
 function decrypter() {
     ocultarPanel();
-    resultado.textContent = decrypt(recuperarTexto());
-    mostrarResultado();
+    var textoDesencriptado = decrypt(recuperarTexto());
+    if (textoDesencriptado === "") {
+        alert("No existe texto a desencriptar.");
+    } else {
+        mostrarResultado();
+        resultado.textContent = "";
+        mostrarTextoDeFormaGradual(textoDesencriptado);
+    }
 }
 
 // este método copia el texto del resultado del encriptado directamente al "textArea" para desencriptar directamente y no al portapapeles...
 function copiar() {
-    textArea.value = recuperarTextoBloque2();
+    var textoCopiar = recuperarTextoBloque2();
+
+    navigator.clipboard.writeText(textoCopiar);
+    mostrarCheck();
+
 }
 
 //recupera el texto que hay en el TextArea
@@ -140,4 +152,16 @@ function resaltarBloque() {
     setTimeout(function () {
         bloque2.classList.remove("resaltado");
     }, 700); // Duración en milisegundo
+}
+
+// Creamos una función que muestra el check por 2 segundos y lo oculta
+function mostrarCheck() {
+    // Obtenemos el elemento div que contiene el check
+    var check = document.getElementById("check");
+    // Cambiamos el estilo del div para que se muestre
+    check.style.display = "block";
+    // Usamos un temporizador para ocultar el check después de 2 segundos
+    setTimeout(function () {
+        check.style.display = "none";
+    }, 2000);
 }
