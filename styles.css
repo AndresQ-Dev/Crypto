@@ -321,6 +321,16 @@ footer {
         margin-top: auto;
     }
 
+    #check {
+        width: 40px; /* Tamaño más pequeño del círculo */
+        height: 40px;
+        top: 80%; /* Ajusta la posición vertical */
+    }
+
+    #check-symbol {
+        font-size: 30px; /* Tamaño más pequeño del símbolo */
+    }
+
     footer {
         margin-top: 15px;
     }
