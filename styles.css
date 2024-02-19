@@ -322,13 +322,13 @@ footer {
     }
 
     #check {
-        width: 40px; /* Tamaño más pequeño del círculo */
-        height: 40px;
-        top: 80%; /* Ajusta la posición vertical */
+        width: 60px; /* Tamaño más pequeño del círculo */
+        height: 60px;
+        top: 50%; /* Ajusta la posición vertical */
     }
 
     #check-symbol {
-        font-size: 30px; /* Tamaño más pequeño del símbolo */
+        font-size: 40px; /* Tamaño más pequeño del símbolo */
     }
 
     footer {
