@@ -45,12 +45,8 @@ function decrypter() {
 // este método copia el texto del resultado del encriptado directamente al "textArea" para desencriptar directamente y no al portapapeles...
 function copiar() {
     var textoCopiar = recuperarTextoBloque2();
-    if (esIOS()) {
-        alert('Lo siento, esta función no está disponible en IOS');
-    } else {
-        navigator.clipboard.writeText(textoCopiar);
-        mostrarCheck();
-    }
+    navigator.clipboard.writeText(textoCopiar);
+    mostrarCheck();
 }
 
 //recupera el texto que hay en el TextArea
@@ -185,9 +181,3 @@ switchMode.addEventListener('change', function (event) {
 
     }
 });
-
-
-function esIOS() {
-    return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-  }
-  
