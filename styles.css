@@ -246,12 +246,12 @@ footer {
 
 .darkMode .textArea{
     color: #f1f1f1;
-    /* transition: all 1s; */
+    /* transition: all 1.5s; */
 }
 
 .darkMode .restricciones{
     color: #f1f1f1;
-    /* transition: all 1s; */
+    /* transition: all 1.5s; */
 }
 
 .darkMode .bloque2{
@@ -274,7 +274,7 @@ footer {
 
 .darkMode .fa-sun {
     color: yellow;
-    transition: all 1s;
+    transition: all 1.5s;
 }
 /* Termina el modo oscuro */
 

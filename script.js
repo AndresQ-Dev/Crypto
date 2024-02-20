@@ -1,6 +1,7 @@
-var btnEncriptar = document.querySelector(".btnEncriptar");
-var btnDesencriptar = document.querySelector(".btnDesencriptar");
-var btnCopiar = document.querySelector(".btnCopiar");
+// selección de elementos html
+var btnEncriptar = document.querySelector(".btnEncriptar"); //botón Encriptar
+var btnDesencriptar = document.querySelector(".btnDesencriptar"); //botón desencriptar
+var btnCopiar = document.querySelector(".btnCopiar"); //botón copiar
 var contenedorImagenPanel = document.querySelector(".contenedorImagenPanel");
 var contenedorH3 = document.querySelector(".contenedorH3");
 var contenedorP = document.querySelector(".contenedorParrafo");
@@ -9,6 +10,7 @@ var contenedorCopiar = document.querySelector(".contenedorCopiar");
 var resultado = document.querySelector(".textoResultado");
 var textArea = document.querySelector(".textArea"); // Selección del textarea
 
+//Asociación de funciones a botones en "onclick"
 btnEncriptar.onclick = encriptar;
 btnDesencriptar.onclick = decrypter;
 btnCopiar.onclick = copiar;
@@ -18,7 +20,7 @@ function encriptar() {
     if (text === "") {
         alert("Debe escribir algo en el campo de texto");
     } else if (!/^[a-z\s.,;¡!¿?]+$/.test(text)) {
-        alert("Por favor, ingrese solo letras minúsculas sin acentos.");
+        alert("Por favor, ingrese sólo letras minúsculas sin acentos.");
     } else {
         //vaciar el textoResultado para que no se repita cada vez que se presione el botón "Encriptar"...
         document.querySelector(".textoResultado").textContent = "";
