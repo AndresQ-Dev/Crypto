@@ -185,3 +185,9 @@ switchMode.addEventListener('change', function (event) {
 
     }
 });
+
+
+function esIOS() {
+    return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+  }
+  
