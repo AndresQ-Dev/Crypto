@@ -45,10 +45,12 @@ function decrypter() {
 // este método copia el texto del resultado del encriptado directamente al "textArea" para desencriptar directamente y no al portapapeles...
 function copiar() {
     var textoCopiar = recuperarTextoBloque2();
-
-    navigator.clipboard.writeText(textoCopiar);
-    mostrarCheck();
-
+    if (esIOS()) {
+        alert('Lo siento, esta función no está disponible en IOS');
+    } else {
+        navigator.clipboard.writeText(textoCopiar);
+        mostrarCheck();
+    }
 }
 
 //recupera el texto que hay en el TextArea
@@ -170,7 +172,7 @@ function mostrarCheck() {
 var switchMode = document.querySelector('.switch-button'); // Seleccionar el botón por su clase
 var moonIcon = document.querySelector('.fa-moon'); // Seleccionar el ícono de la luna
 
-switchMode.addEventListener('change', function(event) {
+switchMode.addEventListener('change', function (event) {
     if (event.target.checked) { // Verificar si el checkbox está marcado
         document.body.classList.add('darkMode'); // Agregar la clase darkMode al cuerpo del documento
         moonIcon.classList.remove('fa-moon'); // Remover la clase fa-moon del ícono
@@ -180,6 +182,6 @@ switchMode.addEventListener('change', function(event) {
         moonIcon.classList.remove('fa-sun'); // Remover la clase fa-sun del ícono
         moonIcon.classList.add('fa-moon'); // Agregar la clase fa-moon al ícono
         document.body.style.transition = 'background-color 1.8s'; // Agregar transición al volver al modo claro
-    
+
     }
 });
