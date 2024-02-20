@@ -17,3 +17,8 @@
 
 ## Screenshots
 
+![Screemshot desktop](Screenshots/3.png)
+
+![Screemshot movil light](Screenshots/1.jpg)
+
+![Screemshot movil dark](Screenshots/2.jpg)
