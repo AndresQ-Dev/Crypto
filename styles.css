@@ -236,6 +236,7 @@ footer {
     margin-left: 10px;
     /* Espacio entre el texto y el icono */
     vertical-align: middle;
+    transition: all 1s;
 }
 
 .hide {
@@ -280,6 +281,10 @@ footer {
 .darkMode .fa-sun {
     color: yellow;
     transition: all 1.5s;
+}
+
+.darkMode .LogoGitHub {
+    content: url('images/github-mark-white.png');
 }
 /* Termina el modo oscuro */
 
