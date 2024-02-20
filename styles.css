@@ -256,7 +256,7 @@ footer {
 
 .darkMode .bloque2{
     background-color: #151E21;
-    /* transition: all 1s; */
+    transition: all 1s; 
 }
 
 .darkMode .textoResultado{
@@ -413,7 +413,6 @@ footer {
 /* Aplico para resaltar el bloque2 al encriptar 
 no se ve muy bien...  :( */
 .resaltado {
-    /* border: 2px solid rgb(197, 45, 45); */
     /* Establece el borde rojo */
     box-shadow: 0px 0px 10px 2px #0A3871;
 }

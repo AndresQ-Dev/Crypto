@@ -44,7 +44,7 @@ function decrypter() {
     }
 }
 
-// este método copia el texto del resultado del encriptado directamente al "textArea" para desencriptar directamente y no al portapapeles...
+// este método copia el texto del resultado del encriptado directamente al portapapeles, no funciona en IOS...
 function copiar() {
     var textoCopiar = recuperarTextoBloque2();
     navigator.clipboard.writeText(textoCopiar);
@@ -151,10 +151,10 @@ function resaltarBloque() {
     // Después de X segundos, quita la clase resaltado para volver al estado original
     setTimeout(function () {
         bloque2.classList.remove("resaltado");
-    }, 700); // Duración en milisegundo
+    }, 1000); // Duración en milisegundo
 }
 
-// Creamos una función que muestra el check por 2 segundos y lo oculta
+// función que muestra el símbolo check por 2 segundos y lo oculta
 function mostrarCheck() {
     // Obtenemos el elemento div que contiene el check
     var check = document.getElementById("check");
@@ -172,14 +172,13 @@ var moonIcon = document.querySelector('.fa-moon'); // Seleccionar el ícono de l
 
 switchMode.addEventListener('change', function (event) {
     if (event.target.checked) { // Verificar si el checkbox está marcado
-        document.body.classList.add('darkMode'); // Agregar la clase darkMode al cuerpo del documento
+        document.body.classList.add('darkMode'); // Agregar la clase darkMode al body
         moonIcon.classList.remove('fa-moon'); // Remover la clase fa-moon del ícono
         moonIcon.classList.add('fa-sun'); // Agregar la clase fa-sun al ícono
     } else {
-        document.body.classList.remove('darkMode'); // Remover la clase darkMode del cuerpo del documento
-        moonIcon.classList.remove('fa-sun'); // Remover la clase fa-sun del ícono
-        moonIcon.classList.add('fa-moon'); // Agregar la clase fa-moon al ícono
-        document.body.style.transition = 'background-color 1.8s'; // Agregar transición al volver al modo claro
-
+        document.body.classList.remove('darkMode'); // Remuevo la clase darkMode del cuerpo del documento
+        moonIcon.classList.remove('fa-sun'); // Remuevo la clase fa-sun del ícono
+        moonIcon.classList.add('fa-moon'); // Agrego la clase fa-moon al ícono
+        document.body.style.transition = 'background-color 1.5s'; // Agrego transición al volver al modo claro
     }
 });
