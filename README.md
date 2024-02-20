@@ -17,8 +17,18 @@
 
 ## Screenshots
 
-![Screemshot desktop](Screenshots/3.png)
-
-![Screemshot movil light](Screenshots/1.jpg)
-
-![Screemshot movil dark](Screenshots/2.jpg)
+<table>
+  <tr>
+    <td align="center">
+      <img src="Screenshots/1.jpg" alt="Screemshot movil light" width="200">
+    </td>
+    <td align="center">
+      <img src="Screenshots/2.jpg" alt="Screemshot movil dark" width="200">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="Screenshots/3.png" alt="Screemshot desktop" width="400">
+    </td>
+  </tr>
+</table>
