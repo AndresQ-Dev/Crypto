@@ -1,0 +1,25 @@
+body {
+    background-color: #222; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto en modo oscuro */
+}
+
+header {
+    background-color: #333; /* Color de fondo del encabezado en modo oscuro */
+    color: #fff; /* Color del texto en el encabezado en modo oscuro */
+}
+
+.bloque2 {
+    background-color: #444; /* Color de fondo del bloque2 en modo oscuro */
+}
+
+.btnEncriptar,
+.btnDesencriptar,
+.btnCopiar {
+    background-color: #0A3871; /* Color de fondo de los botones en modo oscuro */
+    border-color: #fff; /* Color del borde de los botones en modo oscuro */
+    color: #fff; /* Color del texto de los botones en modo oscuro */
+}
+
+.restricciones {
+    color: #bbb; /* Color del texto en otros elementos en modo oscuro */
+}

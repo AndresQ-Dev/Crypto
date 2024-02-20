@@ -42,6 +42,8 @@ section {
     color: #0A3871;
     border: none;
     background-color: inherit;
+    /* Elimina el marco resaltado al hacer clic... */
+    outline: none;
 }
 
 .restricciones {
