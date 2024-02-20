@@ -178,6 +178,8 @@ section {
     height: 70%;
     padding: 25px;
     box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .textoResultado {
