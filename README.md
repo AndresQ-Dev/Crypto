@@ -1,4 +1,4 @@
-# Encriptador de texto
+# Encriptador de texto (Oracle One)
 
 ## Sencilla aplicación web responsive para encriptar y desencriptar mensajes de texto cortos.
 
