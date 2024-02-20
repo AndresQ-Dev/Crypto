@@ -9,9 +9,30 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 50px;
     margin-top: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-container {
+    margin-right: 20px;
+    border-radius: 160%;
+    box-shadow: inset 0 8px 6;
+    font-size: 1.8em;
+    cursor: pointer;
+    color:#343A40;
+}
+
+.switch-button{
+    display: none;
 }
 
 main {
@@ -212,19 +233,50 @@ footer {
     vertical-align: middle;
 }
 
-.mensaje-tablet {
-    display: none;
-    /* Oculto inicialmente */
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-    /* Color de texto */
-}
-
 .hide {
     display: none;
 }
+
+/* Acá comienza el seteo del modo oscuro */
+.darkMode{
+    background-color: #121212;
+    color: #f1f1f1;
+    transition: all 1s ;
+}
+
+.darkMode .textArea{
+    color: #f1f1f1;
+    /* transition: all 1s; */
+}
+
+.darkMode .restricciones{
+    color: #f1f1f1;
+    /* transition: all 1s; */
+}
+
+.darkMode .bloque2{
+    background-color: #151E21;
+    /* transition: all 1s; */
+}
+
+.darkMode .textoResultado{
+    color: #f1f1f1;
+    /* transition: all 1s; */
+}
+
+.darkMode .contenedorH3{
+    color: #f1f1f1;
+}
+
+.darkMode #check{
+  background-color: #e8ecf8;  
+}
+
+.darkMode .fa-sun {
+    color: yellow;
+    transition: all 1s;
+}
+/* Termina el modo oscuro */
 
 /* Estilos para popup de check al copiar texto encriptado... */
 #check {

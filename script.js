@@ -165,3 +165,21 @@ function mostrarCheck() {
         check.style.display = "none";
     }, 2000);
 }
+
+// Modo oscuro
+var switchMode = document.querySelector('.switch-button'); // Seleccionar el botón por su clase
+var moonIcon = document.querySelector('.fa-moon'); // Seleccionar el ícono de la luna
+
+switchMode.addEventListener('change', function(event) {
+    if (event.target.checked) { // Verificar si el checkbox está marcado
+        document.body.classList.add('darkMode'); // Agregar la clase darkMode al cuerpo del documento
+        moonIcon.classList.remove('fa-moon'); // Remover la clase fa-moon del ícono
+        moonIcon.classList.add('fa-sun'); // Agregar la clase fa-sun al ícono
+    } else {
+        document.body.classList.remove('darkMode'); // Remover la clase darkMode del cuerpo del documento
+        moonIcon.classList.remove('fa-sun'); // Remover la clase fa-sun del ícono
+        moonIcon.classList.add('fa-moon'); // Agregar la clase fa-moon al ícono
+        document.body.style.transition = 'background-color 1.8s'; // Agregar transición al volver al modo claro
+    
+    }
+});
