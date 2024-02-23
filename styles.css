@@ -377,6 +377,7 @@ footer {
 
     .contenedorH3 {
         margin-top: 15px;
+        padding-bottom: 15%;
     }
 
     .contenedorParrafo {
@@ -418,6 +419,10 @@ footer {
     .contenedorImagenPanel {
         display: none;
     }
+
+.contenedorH3{
+    padding-top:40%;
+}
 
     .restricciones {
         margin-left: 0;
